@@ -14,7 +14,7 @@ body {
 
 main {
     width: 90%;
-    margin-top: 5%;
+    margin-top: 10%;
     padding: 4% 6% 2% 6%;
     background-color: hsl(216, 50%, 16%);
     border-radius: 4%;
@@ -22,6 +22,14 @@ main {
 
 .main-img {
     width: 100%;
+}
+
+.main-img:hover {
+    background-color: hsl(178, 100%, 50%);
+    opacity: 0.5;
+    background-image: url(./images/icon-view.svg);
+    cursor: pointer;
+    z-index: 2;
 }
 
 .first-container {
@@ -37,6 +45,11 @@ h1 {
     font-weight: 300;
     font-size: 1.5rem;
     color: white;
+}
+
+h1:hover {
+    cursor: pointer;
+    color:hsl(178, 100%, 50%);
 }
 
 p {
@@ -71,6 +84,10 @@ p {
     
 }
 
+.days {
+    color: hsl(215, 51%, 70%);
+}
+
 .profile-container {
     display: flex;
     align-items: center;
@@ -89,6 +106,7 @@ p {
 .text-profile {
     width: 100%;
     padding-left: 7%;
+    color: hsl(215, 51%, 70%);
 }
 
 a {
@@ -97,6 +115,24 @@ a {
     font-weight: 300;
 }
 
+a:hover {
+    cursor: pointer;
+    color:hsl(178, 100%, 50%);
+}
+
 hr {
     border-top: 0.1rem solid hsl(215, 32%, 27%);
+}
+
+@media (min-width: 960px) {
+
+    body {
+        margin-top: 6%;
+    }
+
+    main {
+        width: 20%;
+        margin-top: 0;
+        padding: 1%;
+    }
 }
