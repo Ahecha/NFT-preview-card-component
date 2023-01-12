@@ -15,8 +15,9 @@ body {
 main {
     width: 90%;
     margin-top: 5%;
-    padding: 4% 6%;
+    padding: 4% 6% 2% 6%;
     background-color: hsl(216, 50%, 16%);
+    border-radius: 4%;
 }
 
 .main-img {
@@ -73,11 +74,11 @@ p {
 .profile-container {
     display: flex;
     align-items: center;
-    padding: 7% 0 4% 0;
+    padding: 7% 0 0 0;
 }
 
 .img-profile {
-    width: 40%;
+    width: 13%;
     border-style: solid;
     border-color: white;
     border-radius: 50%;
@@ -87,4 +88,15 @@ p {
 
 .text-profile {
     width: 100%;
+    padding-left: 7%;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-weight: 300;
+}
+
+hr {
+    border-top: 0.1rem solid hsl(215, 32%, 27%);
 }
