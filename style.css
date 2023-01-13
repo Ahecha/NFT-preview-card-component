@@ -1,3 +1,9 @@
+/* To center the main on the page using flexbox, add min-height:100vh and 
+align-items center to the body and remove the margin value in the main.
+
+For a responsive content which won't require a media query for this challenge, 
+replace the percentage width value of the main with fixed max-width value. e.g: max-width: 25rem */
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -9,13 +15,13 @@
 body {
     display: flex;
     justify-content: center;
+    align-items: center;
     background-color: hsl(217, 54%, 11%);
 }
 
 main {
-    
+    min-height:100vh;
     width: 90%;
-    margin-top: 10%;
     padding: 4% 6% 2% 6%;
     background-color: hsl(216, 50%, 16%);
     border-radius: 4%;
