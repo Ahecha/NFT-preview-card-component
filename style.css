@@ -13,6 +13,7 @@ body {
 }
 
 main {
+    
     width: 90%;
     margin-top: 10%;
     padding: 4% 6% 2% 6%;
@@ -20,19 +21,44 @@ main {
     border-radius: 4%;
 }
 
+.image-container {
+    position: relative;
+}
+
 .main-img {
     width: 100%;
+    border-radius: 4%;
     
 }
 
-.main-img:hover {
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
     background-color: hsl(178, 100%, 50%);
-    opacity: 0.5;
-    background-image: url(./images/icon-view.svg);
-    cursor: pointer;
-    z-index: 2;
+    border-radius: 4%;
+    
 }
-
+ 
+  .view {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    
+  }
+  
+  .image-container:hover .overlay:hover {
+    opacity: 0.5;
+    cursor: pointer;
+  }
+  
 .first-container {
     padding: 4% 0;
 }
@@ -76,9 +102,6 @@ p {
 
 }
 
-.icon-text {
-
-}
 
 .price {
     color: hsl(178, 100%, 50%);
